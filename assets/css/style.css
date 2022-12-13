@@ -1,0 +1,461 @@
+@font-face {
+    font-family: 'Castoro';
+    src: url(../../fonts/Castoro-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Castoro', sans-serif;
+}
+
+/* Bouton + DarkMode */ 
+
+.rotat {
+    display: none;
+}
+
+#ON{
+    width: 39px;
+    height: 50px;
+}
+
+.dark-mode.right-section {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode.left-section {
+    background-color: rgb(78, 71, 71);
+    color: white
+}
+
+.main-content>div {
+    padding-bottom: 10px;
+}
+
+header {
+    padding: 20px 0;
+}
+
+.job {
+    font-size: 1.2rem;
+}
+
+.pp {
+    width: 100px;
+    height: 100px
+}
+
+
+@media (max-width: 768px){
+
+    body{
+        width: 100%;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    /* DEBUT DU HAUT */
+
+    .header-decoration>div{
+        display: none;
+    }
+
+    header{
+        width:100%;
+        padding: 20px 0;
+        align-items: center;
+        background:#c1cbe6;
+
+    }
+
+    .profile-pic *{
+        display: none;
+    }
+
+    .profile-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info h1 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .profile-info h2 {
+        text-align: center;
+        font-style: italic;
+        font-size: 1.8rem;
+        padding-bottom: 8px;
+    }
+
+    .profile-contacts .fas {
+        margin: 5px;
+    }
+
+    .profile-contacts li {
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:flex-start;
+        margin: 2px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    /* FIN DU HAUT */
+
+    /* MAIN CONTENT */
+
+    .date {
+        font-weight: bold;
+        text-decoration: underline;
+        padding-top: 2px;
+    }
+
+    .main-content{                          /* Formations first , langages et softskills last*/
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-content h3{
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .main-content p{
+        padding: 3px;
+    }
+
+    .main-content a:visited{
+        color: rgb(0, 110, 255);
+    }
+
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: whitesmoke;
+        width: 100%;
+        padding: 0 0;
+        background: #202020;
+    }
+
+    .left-section>div {
+        display: flex;
+    }
+
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 0;
+        background: #cfcfcf;
+    }
+
+    .right-section>div {
+        display: flex;
+    }
+
+    .right-section:first-child{
+        color: whitesmoke;
+        background: #202020;
+    }
+
+    .langues, .languages, .formation, .experience, .language, .softskills, .madskills{
+        margin: 0 5%;;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .left-section a:visited{
+        color: rgb(0, 110, 255);
+    }
+
+
+    /* BAS */
+
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        background:#c1cbe6;
+        padding: 15px 0;
+    } 
+
+    footer .left-section, footer .right-section{
+        background: #c1cbe6;
+        color: black;
+    }
+
+    footer .left-section {
+        width: 35%;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+
+    footer .right-section {
+        width: 65%;
+        text-align: center;
+    }
+
+
+    footer .left-section.dark-mode, footer .right-section.dark-mode{
+        background: #c1cbe6;
+        color: black;
+    }
+
+    #button {
+        width: 39px;
+        display: flex;
+        justify-content: left;
+        margin-left: 9%;
+    }
+
+    /* Dark mode sans séparation
+        
+        .dark-mode {
+        background-color: black;
+        color: white;
+    } */
+
+}
+
+@media (min-width: 768px){
+
+    body {
+        padding: 0 20%;
+        background-image: url(../img/mafateopti.jpg);
+        }
+
+
+    .header-decoration {
+        display:flex;
+        height:70px;
+        }
+
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width:35%;
+        color: whitesmoke;
+        background: #202020;
+        padding: 20px 10px;
+        }
+
+    .left-section>div {
+        display: flex;
+        }
+
+    .left-section a:visited{
+        color: rgb(0, 110, 255);
+        }  
+
+    .main-content a:visited{
+        color: rgb(0, 110, 255);
+        }
+
+    .left-section h3{
+        text-align: center;
+        text-decoration: underline;
+        }
+
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width:65%;
+        background: #cfcfcf;
+        }
+
+    .right-section>div {
+        display: flex;
+        }
+
+    .date {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .right-section>div{
+        width: 75%;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background:#c1cbe6;
+    }
+
+    .profile-info h1 {
+        font-size: 3.5rem;
+    }
+
+    .profile-info h2 {
+        font-size: 1.8rem;
+        padding-bottom: 8px;
+    }
+
+    .profile-pic img {
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+        border-radius: 10%;
+        border: 3px solid rgb(95, 117, 241);
+        transform: translateX(-25px);
+        margin-left: 10%;
+        /* animation: rotation2 2s infinite linear; */
+    }
+
+
+    .profile-contacts .fas {
+        margin: 5px;
+    }
+
+    .profile-contacts li {
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:flex-start;
+        margin: 5px;
+    }
+
+    .logo img{
+        width: 170px;
+        height: 200px;
+        /* animation: rotation 2s infinite linear; */
+    }
+
+    .main-content {
+        display:flex;
+        flex-direction: row;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .main-content p {
+        font-size: 0.85rem;
+        padding: 3px;
+    }
+
+    .languages, .langues {
+        text-align: center;
+    }
+
+    .softskills{
+        text-align: center;
+        padding: 0 10%;
+    }
+
+    .formation, .experience {
+        justify-content: center;
+    }
+
+
+    /*
+
+                ul:nth-child       COLLER NE MARCHE PAS
+
+    .softskills ul :nth-child(2n+3)
+        text-align: right;
+
+    */
+
+
+    .left-section li {
+        margin: 15px 10px;
+    }
+
+    .right-section h3{
+        margin-bottom: 15px;
+    }
+
+    .madskills{
+        text-align: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+}
+
+
+/* TESTS ROTATIONS */
+
+/* @media (min-width: 1920px){
+
+.rotat {
+    display: block;
+}
+
+.rotat{                         
+    position: absolute;
+    top: 30px;
+    left: 27%;
+    z-index: 1;
+    animation: rotationbis 3s infinite linear;
+} */
+
+
+
+/* .profile-pic img {
+    animation: rotation2 2s infinite linear;
+}
+
+
+.logo img{
+    animation: rotation 2s infinite linear;
+}
+
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+  @keyframes rotationbis {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+@keyframes rotation2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-359deg);
+    }
+  }
+} */
