@@ -42,11 +42,6 @@ header {
     font-size: 1.2rem;
 }
 
-.pp {
-    width: 100px;
-    height: 100px
-}
-
 
 @media (max-width: 768px){
 
@@ -314,8 +309,10 @@ header {
     }
 
     .profile-pic img {
-        height: 200px;
+        height: 280px;
         width: 200px;
+        object-fit: cover;
+        
         overflow: hidden;
         border-radius: 10%;
         border: 3px solid rgb(95, 117, 241);
@@ -342,6 +339,15 @@ header {
         height: 200px;
         /* animation: rotation 2s infinite linear; */
     }
+
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
 
     .main-content {
         display:flex;
@@ -430,14 +436,7 @@ header {
 
 
 
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
+
 
 
   @keyframes rotationbis {
